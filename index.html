@@ -3,52 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>project1</title>
-    
+    <link rel="stylesheet" href="style.css">
+    <title>Dynamic Resume Builder</title>
 </head>
-<body style=" background-color: black;
-color: aliceblue;
-text-align: center;
-font-weight: bold;
-padding: 0cap;
-margin-inline-start: auto;">
+<body>
+    <div class="container">
+        <h1>Dynamic Resume Builder</h1>
+        <form id="resume-form">
+            <input type="text" placeholder="Name" id="input-name" required>
+            <input type="text" placeholder="Contact Info" id="input-contact" required>
+            <input type="text" placeholder="Education" id="input-education" required>
+            <input type="text" placeholder="Experience" id="input-experience" required>
+            <input type="text" placeholder="Skills" id="input-skills" required>
+            <button type="submit">Update Resume</button>
+        </form>
 
-    <header><h2>personal information</h2></header> 
-    <main>
-        <section>Name:Syeda Anamta Ali</section>
-    <section>contact no: 00100203</section>
-    <section>Email:AnuQueen0068@gmail.com</section>
-    <section>tiktok:<div>syedaanamtaali</div></section>
-    <img src="project.jpg" alt="profile picture" width="180px">
-    <hr>
-    <h2>Education</h2>
-    <section>Matriculation</section>
-    <section>Intermediate</section>
-    <section>Bachelor of arts</section>
-    <hr>
-    <h2>Skills</h2>
-<div id="Skills">
-<section>Html</section>
-<section>Css</section>
-<section>JavaScript</section>
-<section>Typescript</section>
+        <div class="resume" id="resume">
+            <h2 id="name">Your Name</h2>
+            <h3>Contact Information</h3>
+            <p id="contact">Your Contact Info</p>
+            <h3>Education</h3>
+            <p id="education">Your Education</p>
+            <h3>Experience</h3>
+            <p id="experience">Your Experience</p>
+            <h3>Skills</h3>
+            <p id="skills">Your Skills</p>
+        </div>
 
-</div>
-<div class="togglecontainer">
-<input type="button" value="Hide skills" id="togglebutton" class="togglebutton">
+        <button id="share-button">Share My Resume</button>
+    </div>
 
-</div>
-    <hr>
-    <h2>Work Experience</h2>
-    <section>teaching </section>
-    <section>call center</section>
-    <section>cati work</section>
-    
-    </main>
-    <script src="index.js" type="module"></script>
-<div style="padding: 5px;
-margin: 10px;
-color: rgb(150,236,236);
-"></div>
+    <script src="script.js"></script>
 </body>
 </html>
